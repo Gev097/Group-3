@@ -1,0 +1,746 @@
+:root{
+    --blue: #37A;
+    --white: #fff;
+    --grey: #707070;
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: .2s all linear;
+    font-family: "Raleway", sans-serif;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+.contanier{
+    width: 100%;
+    padding: 1.3rem 5%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* ...........header......... */
+.back {
+    background-color: #222;
+    background-image: url(../Images/infinite-loop-01.jpg);
+    background-repeat: no-repeat;
+    background-position: 48% 30%;
+    background-size: 155%;
+    height: 100vh;
+    min-height: 375px;
+    position: relative;
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 5%;
+}
+
+header #menu-bar{
+    font-size: 1.7rem;
+    color: var(--white);
+    display: none;
+}
+
+header #menu-bar:hover{
+    color: orange;
+}
+header .loop a{
+    font-size: 1.6rem;
+    font-weight: 900;
+    color:  var(--blue);
+}
+header .loop a:hover{
+    color: lightblue;
+}
+header .navbar a{
+    font-size: 1.6rem;
+    color:  var(--blue);
+    padding: 1rem 2rem;
+}
+
+header .navbar a:hover{
+    color: var(--white);
+    background-color: var(--blue);
+
+}
+.back .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+.back .inner h1{
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 2px #333;
+    color: var(--white);
+    text-align: center;
+}
+.back .inner p{
+    text-shadow: 2px 2px 2px #333;
+    line-height: 1.9;
+    color: var(--white);
+    text-align: center;
+    font-size: 1.5rem;
+}
+.btn{
+    color: var(--white);
+    cursor: pointer;
+    background: #357;
+    padding: 13px 45px;
+    transition: all 0.3s ease;
+    font-weight: 900;
+    font-size: 3rem;
+    position: absolute;
+    top: 80%;
+    right: 46%;
+}
+.btn:hover{
+    transform: scale(1.2);
+    background-color: rgb(70, 135, 201);
+}
+/* ..............support.............. */
+
+.support .contanier .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 2rem; */
+}
+
+.support .contanier .text h3{
+    margin-top: 6rem;
+    font-size: 2.6rem;
+    font-weight: normal;
+    margin-bottom: 1.5rem !important;
+    color: var(--blue);
+}
+.support .contanier .text p{
+    font-size: 1.2rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem !important;
+    color: var(--grey);
+}
+.support .contanier .text span a{
+    font-size: 1.2rem;
+    color: var(--blue);
+    margin-bottom: 1.5rem !important;
+}
+.support .contanier .text span a:hover{
+    font-size: 1.2rem;
+    color: red;
+    margin-bottom: 1.5rem !important;
+}
+.support .contanier .inner .box{
+    margin-top: 5rem;
+    display: flex;
+    /* width: 49%; */
+}
+.support .contanier .inner .box .icon{
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--blue);
+    padding-right: 1.8rem;
+}
+.support .contanier .inner .box .head h4{
+    font-size: 2rem;
+    margin-bottom: 1.5rem !important;
+    color: var(--blue);
+    font-weight: 500;
+}
+.support .contanier .inner .box .head p{
+    font-size: 1.2rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem !important;
+    color: var(--grey);
+    padding-right: 2rem;
+}
+.support .contanier .inner .box .head span a{
+    font-size: 1.2rem;
+    color: var(--blue);
+    margin-bottom: 1.5rem !important;
+}
+.support .contanier .inner .box .head span a:hover{
+    font-size: 1.2rem;
+    color: red;
+    margin-bottom: 1.5rem !important;
+}
+
+/* ..............support1.............. */
+
+.support1 .contanier .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+.support1 .contanier .inner .box{
+    margin-top: 3rem;
+    display: flex;
+}
+.support1 .contanier .inner .box .icon{
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--blue);
+    padding-right: 1.8rem;
+}
+.support1 .contanier .inner .box .head h4{
+    font-size: 2rem;
+    margin-bottom: 1.5rem !important;
+    color: var(--blue);
+    font-weight: 500;
+}
+.support1 .contanier .inner .box .head p{
+    font-size: 1.2rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem !important;
+    color: var(--grey);
+    padding-right: 2rem;
+}
+.support1 .contanier .inner .box .head p .black{
+    color: black;
+}
+.support1 .contanier .inner .box .head span a{
+    font-size: 1.2rem;
+    color: var(--blue);
+    margin-bottom: 1.5rem !important;
+}
+.support1 .contanier .inner .box .head span a:hover{
+    font-size: 1.2rem;
+    color: red;
+    margin-bottom: 1.5rem !important;
+}
+.support1 .contanier .inner .box .head .bttn{
+    color: var(--white);
+    cursor: pointer;
+    background: #357;
+    padding: 1rem 3rem;
+    transition: all 0.3s ease;
+    font-size: 1.4rem;
+}
+.support1 .contanier .inner .box .head .bttn:hover{
+    /* transform: scale(1.2); */
+    background-color: rgb(70, 135, 201);
+}
+
+/* ..............testimonials............... */
+
+.testimonials {
+    background-color: var(--white);
+    min-height: 375px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.055), rgba(4, 9, 30, 0.055)), url(../Images/infinite-loop-02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.testimonials .content {
+    position: relative; 
+    top: 10%;
+}
+.testimonials .content h3{
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 2px #333;
+    color: var(--white);
+    text-align: center;
+}
+.testimonials .content p{
+    text-shadow: 2px 2px 2px #333;
+    line-height: 1.9;
+    color: var(--white);
+    text-align: center;
+    font-size: 1.5rem;
+}
+.testimonials .inner{
+    display: flex;
+    position: absolute;
+    top: 35%;
+    margin-left: 16%;
+}
+.testimonials .inner img{
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+.testimonials .inner .text{
+    width: 70%;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: var(--white);
+    font-weight: 200;
+}
+.testimonials .inner .text h5{
+    margin-top: 1.5rem;
+    float: right;
+    font-style: italic;
+}
+.testimonials .controls{
+    margin-top: 2rem;
+    position: absolute;
+    top: 85%;
+    left: 47%;
+    cursor: pointer;
+}
+
+.testimonials .controls .vid-btn{
+    width: 1.2rem;
+    height: 1.2rem;
+    background: var(--white);
+    opacity: .5;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.testimonials .controls .vid-btn:hover{
+    background: var(--white);
+    opacity: 1;
+}
+/* ........gallery....... */
+
+.gallery .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+.gallery h2{
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+    color: var(--blue);
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+.gallery p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: center;
+    color: var(--grey);
+    margin-bottom: 4rem;
+    line-height: 1.5;
+}
+
+.gallery .inner .box{
+    width: 18%;
+    height: 23rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery .inner .box:hover .content{
+    opacity: 1;
+    top: 0;
+    background: rgba(59, 36, 36, 0.4);
+}
+
+.gallery .inner .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery .inner .box .content{
+    position: absolute;
+    opacity: 0;
+    top: -20%; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    padding-left: 1.7rem;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    transition: .5s;
+}
+.gallery .inner .box .content  p{
+    font-size: 1.6rem;
+    color: var(--white);
+    margin: .1rem 0;
+}
+.gallery .inner .box:hover .content .blue{
+    bottom: 0;
+}
+.gallery .inner .box .content .blue{
+    position: absolute;
+    bottom: -50%;
+    width: 100%;
+    height: 10px;
+    margin-left: -1.7rem;
+    background-color: var(--blue);
+    transition: .5s;
+}
+.gallery .contanier .controls{
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.gallery .contanier .controls .vid-btn{
+    width: 1.1rem;
+    height: 1.1rem; 
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 1.3rem;
+    cursor: pointer;
+    margin-bottom: 6rem;
+}
+
+.gallery .contanier .controls .vid-btn:hover{
+    background: var(--blue);
+}
+/* ...............contact............... */
+
+.contact {
+    background-color: var(--white);
+    min-height: 375px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.055), rgba(4, 9, 30, 0.055)), url(../Images/infinite-loop-03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact h2{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--white);
+    font-weight: 100;
+}
+.contact p{
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--white);
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.contact .inner{
+    display: flex;
+    position: relative;
+    top: 10%;
+}
+.contact .inner .chat{
+    position: absolute;
+    margin-left: 12rem;
+}
+.contact .inner form .inputBox input{
+    background: rgb(0, 0, 0, .1);
+    padding: .5rem 2.5rem;
+    border: 1px solid var(--white);
+    border-radius: .5rem;
+    text-transform: none;
+    font-size: 1.5rem;
+    color: var(--white);
+    margin: .3rem;
+}
+::placeholder{
+    color: var(--white)
+}
+
+.contact .inner form textarea{
+    resize: none;
+    background: rgb(0, 0, 0, .1);
+    border-radius: .5rem;
+    border: 1px solid var(--white);
+    margin: .3rem;
+    padding: .5rem 2rem;
+    font-size: 1.5rem;
+    color: var(--white);
+    text-transform: none;
+}
+
+.contact .content{
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+}
+.contact .inner .content .icons a i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: var(--white);
+}
+.contact .inner .content .icons a i:hover{
+    color: var(--blue);
+}
+.contact .inner .text a h4{
+    margin-left: 2.5rem;
+    margin-top: 1.8rem;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--white);
+}
+.contact .inner .text a h4:hover{
+    color: var(--blue);
+}
+.contact .inner .chat .btttn{
+    color: var(--white);
+    position: absolute;
+    cursor: pointer;
+    background: #357;
+    padding: 1rem 6rem;
+    transition: all 0.3s ease;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    top: 105%;
+    right: 33%;
+}
+.contact .inner .chat .btttn:hover{
+    /* transform: scale(1.2); */
+    background-color: rgb(70, 135, 201);
+}
+/* .............media.................. */
+
+@media(max-width: 1300px){
+    .contact p{
+        font-size: 1.1rem;
+        line-height: 1.2;
+    }
+    .contact .inner .chat{
+        margin-left: 6rem;
+    }
+    .gallery p{
+        margin-bottom: 3rem;
+    }
+    
+    .gallery .inner .box{
+        height: 18rem;
+    }
+    .gallery .inner .box .content  p{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width: 1100px){
+    .contact p{
+        font-size: 1.1rem;
+        line-height: 1.2;
+    }
+    .contact .inner .chat{
+        margin-left: 4rem;
+    }
+    .gallery p{
+        margin-bottom: 3rem;
+    }
+    
+    .gallery .inner .box{
+        height: 17rem;
+    }
+    .gallery .inner .box .content  p{
+        font-size: 1.2rem;
+    }
+    header{
+        padding: 1.2rem 2%;
+    }    
+    header .loop a{
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+    header .navbar a{
+        font-size: 1.3rem;
+        padding: 1rem 1.3rem;
+    }
+    .testimonials .inner .text{
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+    .testimonials .inner .text h5{
+        margin-top: 1.3rem;
+    }    
+    .testimonials .content h3{
+        font-size: 3rem;
+    }
+    .testimonials .content p{
+        line-height: 1.4;
+        font-size: 1.3rem;
+    }
+
+}
+@media(max-width: 1000px){
+    .contact p{
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+    .contact .inner .chat{
+        margin-left: 2rem;
+    }
+    .gallery p{
+        margin-bottom: 3rem;
+    }
+    
+    .gallery .inner .box{
+        height: 16rem;
+    }
+    .gallery .inner .box .content  p{
+        font-size: 1rem;
+    }
+    header .loop a{
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+    header .navbar a{
+        font-size: 1.3rem;
+    }
+    .contact .inner .content .icons a i{
+        margin-top: 1rem;
+        font-size: 2.7rem;
+    }
+    .contact .inner .text a h4{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        font-weight: 200;
+    }    
+}
+@media(max-width: 900px){
+    .contact h2{
+        padding-top: 4rem;
+        font-size: 2rem;
+    }
+    .contact p{
+        font-size: .9rem;
+        line-height: 1.3;
+    }
+    .contact .inner .chat{
+        position: absolute;
+        margin-left: 1rem;
+    }   
+    .contact .content{
+        left: 55%;  
+    }
+    .contact .inner .content .icons a i{
+        margin-top: 1rem;
+        font-size: 2.5rem;
+    }
+    .contact .inner .text a h4{
+        margin-left: 1rem;
+        margin-top: 1.8rem;
+        font-size: 1.5rem;
+    }
+    header .loop a{
+        font-size: 1.3rem;
+    }
+    header .navbar a{
+        font-size: 1.1rem;
+        color:  var(--blue);
+        padding: 1rem .9rem;
+    }
+    .btn{
+        font-weight: 600;
+        font-size: 2.5rem;
+        right: 40%;
+    }
+    .gallery p{
+        font-size: 1rem;
+    }
+    .gallery .inner .box{
+        width: 23%;
+        height: 15rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .gallery .inner .box5:nth-child(5){
+        display: none;
+    }
+    .gallery .inner .box .content  p{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width: 900px){   
+    header #menu-bar{
+        font-size: 2rem;
+        color: var(--grey);
+        display: initial;
+        border: 1px solid var(--grey);
+        padding: .5rem .9rem;
+        border-radius: 8px;
+        margin-left: 30rem;
+    }
+    
+    header #menu-bar:hover{
+        color: orange;
+        background-color: rgb(243, 238, 238);
+        opacity: 1;
+    }
+    header #menu-bar:hover .navbar{
+        transform: translate(0%);
+    }
+
+    header .loop a{
+        font-size: 1.6rem;
+        font-weight: 900;
+        color:  var(--blue);
+    }
+    header .navbar{
+        width: 100%;
+        height: 300px;
+        background-color: var(--white);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        flex-direction: column;
+        opacity: 1;
+    }
+    header .navbar a{
+        font-size: 1.4rem;
+    }
+
+    .support .contanier .inner{
+        display: block;
+    }
+   
+    .support1 .contanier .inner{
+        display: block;
+    }
+    .gallery p{
+        font-size: 1rem;
+    }
+    .gallery .inner .box{
+        width: 49%;
+        height: 15rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .gallery .inner .box3:nth-child(3){
+        display: none;
+    }
+    .gallery .inner .box4:nth-child(4){
+        display: none;
+    }
+    .gallery .inner .box .content  p{
+        font-size: 1.2rem;
+    }
+    
+}
